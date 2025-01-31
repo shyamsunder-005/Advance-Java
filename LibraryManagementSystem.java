@@ -82,6 +82,10 @@ public class LibraryManagementSystem {
         Library library = new Library();       
         Book book1 = new Book(1, "book1", "author1");
         Student student = new Student(224206, "Shyam");
+        library.listAvailableBooks();
+        student.borrowBook(book1);
+        library.listAvailableBooks();
+        student.returnBook(book1);
         System.out.println("Works fine.");
         
     }
